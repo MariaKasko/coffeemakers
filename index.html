@@ -1,0 +1,293 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coffee Machine</title>
+<link rel="stylesheet" href="css/foundation.css" />
+<link rel="stylesheet" href="css/motion-ui.css" />
+<link rel="stylesheet" href="css/normalize.css" />
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/vendor/motion-ui.js"></script>
+<script src="js/vendor/modernizr.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+
+</script>
+
+<style>
+#backUp{
+  font-style: italic;
+  float: right;
+}
+.backGrCl{
+  color:#365284;
+}
+figcaption{
+  display: none;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.footer{
+
+  padding:20px;
+  background-color: #FFF0C4;
+}
+.divider{
+  background-color: #FFF0C4;
+  text-align: center;
+  padding: 20px;
+  color:#06315C;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+.reveal{
+  background-color: #FFF0C4 ;
+}
+.lead{list-style:none;}
+
+  .lead li::before {content: "• "; color: #FCBC10; font-weight: 300;}
+
+  .menuText{color:#FFF0C4;}
+
+  .menu-expanded li{
+    background-color: #365284;
+  }
+
+</style>
+
+</head>
+<body>
+
+
+  <nav class="grid-x">
+    <div class="title-bar cell small-12" style="background-color:#365284;" data-responsive-toggle="main-menu" data-hide-for="medium" >
+    <button class="menu-icon" type="button" style="background-color:#365284; width:30px; height:30px; margin-top:10px;" data-toggle="main-menu" ></button>
+    <div class="show-for-small-only"><img src="./img/keuriglogo.png" alt="Logo"></div>
+    <!--<div class="title-bar-title"></div>-->
+  </div>
+  </nav>
+
+  <div class="top-bar" id="main-menu">
+    <div class="top-bar-left" >
+      <ul class="dropdown vertical large-horizontal menu" data-responsive-menu="drilldown medium-dropdown" dara-auto-height="true" data-animate-height="true">
+        <li class="menu-text show-for-medium"><img src="./img/keuriglogo.png" alt="Logo"</li>
+        <li><a href="#" class="menuText">Keurig Models</a>
+          <ul class="menu expanded" style="background-color:#365284" data-magellan>
+              <li ><a href="#first" class="menuText">Classic</a></li>
+              <li ><a href="#second" class="menuText">K-Mini</a></li>
+              <li ><a href="#third" class="menuText">K-Cafe</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="menuText">Contact us</a></li>
+
+      </ul>
+    </div>
+
+
+  </div>
+
+<p id="top" data-magellan-target="top" style="padding:0px;margin:0px;"></p>
+
+<section class="grid-x" style="padding-left: 50px; padding-right:50px" >
+<div class="orbit small-12" role="region" aria-label="Coffee Machine Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+<div class="orbit-wrapper">
+  <div class="orbit-controls">
+    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+  </div>
+  <ul class="orbit-container">
+    <li class="is-active orbit-slide">
+      <figure class="orbit-figure">
+      <img class="orbit-image" src="./img/orbit1.jpeg" alt="main">
+      </figure>
+    </li>
+    <li class="orbit-slide">
+      <figure class="orbit-figure">
+        <img class="orbit-image"  src="./img/orbit2.jpeg" alt="second">
+      </figure>
+    </li>
+    <li class="orbit-slide">
+      <figure class="orbit-figure">
+        <img class="orbit-image" src="./img/orbit3.jpg"  alt="third">
+      </figure>
+    </li>
+    <li class="orbit-slide">
+      <figure class="orbit-figure">
+        <img class="orbit-image" src="./img/orbit4.jpeg"  alt="forth">
+      </figure>
+    </li>
+  </ul>
+</div>
+<nav class="orbit-bullets">
+  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+  <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+</nav>
+</div>
+
+<div class="card cell hide-for-large medium-6 small-12" style="margin-bottom:0px;">
+
+  <img src="./img//cup.jpeg">
+  <div class="card-section">
+    <p class="backGrCl">Keurig® has a coffee maker for everyone and we’re here to help you find yours. That’s why we’ve created a fun and easy way for you to meet the perfect coffee maker for you. All you have to do is answer a few simple questions.</p>
+  </div>
+</div>
+
+<div class="card cell hide-for-large medium-6 small-12" style="margin-bottom:0px;">
+  <div class="card-divider">
+    <h4 class="backGrCl" style="text-align:center;">Working like our earth depends on it</h4>
+  </div>
+  <img src="./img//beans.jpeg">
+  <div class="card-section">
+    <p class="backGrCl">As a coffee company, we’re deeply connected to the earth, and we’ve set ambitious goals to reduce our environmental impact because we’re passionate about doing our part to protect the earth, for generations to come.</p>
+  </div>
+</div>
+
+<div class="cell show-for-large">
+<table>
+  <thead>
+    <tr>
+      <th style="background-color:#FFF0C4">KEURIG Coffee Makers</th>
+      <th style="background-color:#FFF0C4">Beyond Great Coffee</th>
+      <th style="background-color:#FFF0C4">Better Together</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="backGrCl">For every Keurig® beverage made, we restore the same volume of water through projects that focus on enhancing watersheds, protecting habitats and conserving water. We’ve already balanced more than 707 million gallons through projects in geographies where people make our beverages.</td>
+      <td class="backGrCl">As a coffee company, we’re deeply connected to the earth, and we’ve set ambitious goals to reduce our environmental impact because we’re passionate about doing our part to protect the earth, for generations to come.</td>
+      <td class="backGrCl">Our employees are one of our most important resources. And our communities are our greatest partners. When we work together, we can deliver on our commitment to strengthen families and communities.</td>
+    </tr>
+    <tr>
+      <td class="backGrCl">We wanted to make sure that our pods were not only recyclable, but also recycled. That is why we partnered with key players in the industry, particularly recyclers, to develop a solution that really works.</td>
+      <td class="backGrCl">Quality coffee starts with quality relationships with coffee farmers. We provide our suppliers, their employees and their communities with the resources required to improve business practices and livelihoods.</td>
+      <td class="backGrCl">We’re committed to contributing to communities, and empowering our employees to create positive change in the places where we do business. That’s why we hire individuals who value our purpose, mission and vision.</td>
+    </tr>
+    <tr>
+      <td class="backGrCl">Keurig® has a coffee maker for everyone and we’re here to help you find yours. That’s why we’ve created a fun and easy way for you to meet the perfect coffee maker for you. All you have to do is answer a few simple questions. </td>
+      <td class="backGrCl">We’re committed to engaging 1 million people in our supply chain to improve their lives. We’ve helped farming families through various initiatives that resulted in better farming practices, new sources of income and access to clean water.</td>
+      <td class="backGrCl">We support projects that teach farming techniques for efficient water management. We also manage our own industrial water usage, and create products that do likewise.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+</section>
+
+
+<!-- Add content where magellan will be linked -->
+<div class="sections grid-x" style="padding-left: 50px; padding-right:50px">
+   <section id="null" data-magellan-target="null" class="cell small-12 hide-for-large"><div class="divider"><b>KEURIG Coffee Makers</b> </div>
+ </section>
+
+<section id="first" data-magellan-target="first"class="cell small-12 large-4 medium-4" ><button><img src="./img/1.jpg" data-open="classicSpec"></button><br/><div style="background-color:#FFF0C4"><strong>Keurig Classic </strong></div><br/>
+<p class="backGrCl" style="padding-right:5px;">The perfect choice for when space and simplicity are important. At just over 8” wide, it delivers the taste and convenience you expect from a Keurig® brewer without taking up too much space on your countertop. Want to brew your own ground coffee? The K-35 brewer is compatible with the Keurig My K-Cup® Universal Reusable Coffee Filter.</p>
+ </section>
+
+<section id="second" data-magellan-target="second" class="cell small-12 large-4 medium-4" ><button><img src="./img/2.png"  data-open="miniSpec"></button><br/><div style="background-color:#FFF0C4"><strong>Practical makes perfect</strong> </div><br/>
+ <p class="backGrCl" style="padding-right:5px;">Portable coffee maker that makes great coffee and fits anywhere. The sleek new Keurig® K-Mini™ coffee maker is Keurig’s slimmest single serve coffee makers yet. At less than 13 cm wide, it's the perfect size for any space. Just add fresh water to the reservoir, pop in your favourite K‑Cup® pod, press the brew button, and enjoy fresh, delicious coffee in minutes.</p>
+</section>
+
+<section id="third" data-magellan-target="third" class="cell small-12 large-4 medium-4" ><button><img src="./img/3.jpg"  data-open="cafeSpec"></button><br/><div style="background-color:#FFF0C4"><strong >Coffee for me and you </strong></div><br/>
+<p class="backGrCl" style="padding-right:5px;">The new all-in-one K-Café™ single serve coffee, latte, and cappuccino maker from Keurig® is easy to use and transforms any home into a coffeehouse. Brew your favourite coffee, make creamy lattes, or prepare frothy cappuccinos using any K-Cup® pod.</p>
+</section>
+
+<p class="cell small-offset-8 small-4"><a href="#top" class="float-right">^back to top^</a></p>
+
+
+<p class="float-center" id="contact" data-magellan-target="contact">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+</p>
+
+</div>
+<div class="reveal" id="classicSpec" data-reveal>
+  <h1>FRATURES</h1>
+  <ul class="lead">
+    <b>Key Product Features:</b>
+    <li>Slimmest removal water reservoir (1,06 L)</li>
+    <li>Brew multiple cup sizes (175, 235 ou 295 ml)</li>
+    <li>Smart start</li>
+    <li>Hot water on demand</li>
+
+  </ul>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
+<div class="reveal" id="miniSpec" data-reveal>
+  <h1>FRATURES</h1>
+  <ul class="lead">
+    <b>Key Product Features:</b>
+    <li>Fits anywhere - Less than 13 cm wide</li>
+    <li>One cup water reservoir)</li>
+    <li>Select perfect amount - 177 to 355 ml</li>
+
+  </ul>
+  <div class="responsive-embed panorama">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hwKSg69L5h8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><!--width="560" height="315"-->
+  </div>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="cafeSpec" data-reveal>
+  <h1>FRATURES</h1>
+  <ul class="lead">
+    <b>Key Product Features:</b>
+    <li>Large removal water reservoir (1,77 L)</li>
+    <li>Energy efficient - programmable auto off</li>
+    <li>Strong brew button - increase the strength of your coffee</li>
+    <li>Coffee SHOT for specialty drinks - SHOT button to brew a concentrated shot of coffee from your favorite K-Cup® pod.</li>
+
+  </ul>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<footer class="grid-x">
+  <div class="footer cell large-12"></div>
+
+</footer>
+
+
+<script>$(document).foundation();</script>
+
+</body>
+</html>
